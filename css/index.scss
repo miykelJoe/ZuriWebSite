@@ -18,9 +18,24 @@ body{
             background-repeat: no-repeat;
             background-size: cover;
             height: 80em;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
 
             .zuri__logo{
-                
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .zuri{
+                max-width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
