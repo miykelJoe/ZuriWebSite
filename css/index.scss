@@ -9,9 +9,17 @@ html{
     font-family: 'Averta Standard', sans-serif;
 }
 
+:root{
+    --text-color: #514949;
+    --tag-color: #E7332B;
+    --white: #fff;    
+   }
+
 body{
+    font-weight: 400;
 
     header{
+        
         .head__container{
             background-image: url(../media/images/hero-bg.svg);
             background-position: center center;
@@ -20,7 +28,6 @@ body{
             height: 80em;
             display: flex;
             flex-direction: column;
-            // justify-content: center;
             align-items: center;
 
             .zuri__logo{
@@ -28,20 +35,145 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin: 6.9em 0;
             }
-
+            
             .zuri{
-                max-width: 500px;
+                max-width: 70em;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
+                
+                h1{
+                    color: var(--text-color);
+                    text-align: center;
+                    font-size: 3.2em;
+                    font-weight: 800;
+                    margin: .5em 0 1.6em 0;
+                }
+                
+                p{
+                    color: var(--text-color);
+                    font-size: 1.65rem;
+                    opacity: 0.9;
+                    line-height: 1.4em;
+                    opacity: 0.9;
+                    transform: scale(0.97);
+
+                    a{
+                        text-decoration: none;
+                        color: var(--tag-color);
+                    }
+                }
+            }
+
+            .btn__container{
+                margin: 9em 0 0 0;
+                display: grid;
+                grid-template-areas: 
+                'red-button white-button';
+                column-gap: 2.4em;
+                
+                a{
+                    
+                    .header__btn{
+                        border: 1px solid var(--tag-color);
+                        padding: .8em 2em;
+                        cursor: pointer;
+                        font-size: 1.6rem;
+                    }
+                    
+                    .red__btn{
+                        background-color: var(--tag-color);
+                        color: var(--white);
+                        grid-area: red-button;
+
+                    }
+                    .red__btn:hover{
+                        background-color: var(--white);
+                        color: var(--tag-color);
+                    }
+
+                    .white__btn{
+                        background-color: var(--white);
+                        color: var(--tag-color);
+                        grid-area: white-button;
+
+                    }
+                    .white__btn:hover{
+                        background-color: var(--tag-color);
+                        color: var(--white);
+                    }
+                }
+
             }
         }
     }
     
     main{
+        display: flex;
+        flex-direction: column;
         
+        .main__container{
+            max-width: 144em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .header{
+                color: var(--tag-color);
+                font-size: 1.4rem;
+                margin: 10em 0 .5rem 0;
+                line-height: 2.4rem;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            .motto{
+                color: var(--text-color);
+                margin: .8rem 0 6rem 0;
+                text-align: center;
+                font-size: 2.4rem;
+                line-height: 4rem;
+            }
+
+            .card__container{
+                width: 100%;
+                display: grid;
+                grid-template-areas: 
+                'training internship talent';
+                gap: 2em;
+
+                .training-card-container{
+                    grid-area: training;
+
+                    .training-card{
+
+                        .dots{
+                            width: 110px;
+                        }
+                    }
+                }
+                
+                .internship-card-container{
+                    grid-area: internship;
+                }
+                
+                .talent-card-container{
+                    grid-area: talent;
+
+                    .talent-card{
+
+                        .dots{
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+        }
     }
     
     footer{        
