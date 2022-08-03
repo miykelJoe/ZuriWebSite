@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Averta Standard', sans-serif;
+}
+
+body{
+
+    header{
+        .head__container{
+            background-image: url(../media/images/hero-bg.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80em;
+
+            .zuri__logo{
+                
+            }
+        }
+    }
+    
+    main{
+        
+    }
+    
+    footer{        
+
+    }
+}
