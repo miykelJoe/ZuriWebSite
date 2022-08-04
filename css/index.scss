@@ -12,7 +12,8 @@ html{
 :root{
     --text-color: #514949;
     --tag-color: #E7332B;
-    --white: #fff;    
+    --white: #fff;
+    --card-bg-color: #FFFAFA;    
    }
 
 body{
@@ -115,6 +116,10 @@ body{
     main{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 25em;
         
         .main__container{
             max-width: 144em;
@@ -122,6 +127,7 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
             
             .header{
                 color: var(--tag-color);
@@ -131,7 +137,7 @@ body{
                 font-weight: 500;
                 text-align: center;
             }
-
+            
             .motto{
                 color: var(--text-color);
                 margin: .8rem 0 6rem 0;
@@ -141,20 +147,59 @@ body{
             }
 
             .card__container{
-                width: 100%;
+                width: inherit;
                 display: grid;
                 grid-template-areas: 
                 'training internship talent';
-                gap: 2em;
+                column-gap: 3em;
 
+                .card{
+                    background-color: var(--card-bg-color);
+                    max-width: 36em;
+                    padding: 6em 3em;
+
+                    .img{
+                        margin: 0 0 4em 0;
+                    }
+
+                    p{
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                        color: var(--text-color);
+                        opacity: .9;
+                        margin: 0 0 1rem 0;
+                    }
+
+                    h3{
+                        opacity: .9;
+                        line-height: 2.4rem;
+                        font-size: 1.6rem;
+                        margin: 2em 0;
+                        font-weight: 400;
+                        
+                        a{
+                            color: var(--tag-color);
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
                 .training-card-container{
                     grid-area: training;
 
                     .training-card{
 
                         .dots{
-                            width: 110px;
+                            width: 400px;
+                            position: absolute;
+                            z-index: -1;
+                            top: 25em;
+                            left: -17em;
                         }
+
                     }
                 }
                 
@@ -168,7 +213,11 @@ body{
                     .talent-card{
 
                         .dots{
-                            width: 110px;
+                            width: 380px;
+                            position: absolute;
+                            z-index: -1;
+                            top: 25em;
+                            right: -20em;
                         }
                     }
                 }
@@ -177,6 +226,6 @@ body{
     }
     
     footer{        
-
+        
     }
 }
