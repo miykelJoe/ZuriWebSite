@@ -189,7 +189,6 @@ body footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50em;
 }
 body footer .footer__container {
   max-width: 114em;
@@ -240,4 +239,10 @@ body footer .footer__container .h__line--container {
 body footer .footer__container .h__line--container .horizontal__line {
   width: 100%;
   border: solid 1px rgba(0, 0, 0, 0.184);
+}
+body footer .footer__container .text {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9em;
 }/*# sourceMappingURL=index.css.map */

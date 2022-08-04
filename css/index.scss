@@ -230,7 +230,6 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 50em;
         
         .footer__container{
             max-width: 114em;
@@ -299,7 +298,10 @@ body{
             }
 
             .text{
-                
+                font-size: 1.6rem;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 9em;
             }
         }
 
