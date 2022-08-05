@@ -190,6 +190,7 @@ body footer {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  text-align: center;
 }
 body footer .footer__container {
   max-width: 114em;
