@@ -26,7 +26,7 @@ body{
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 80em;
+            min-height: 80em;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -408,7 +408,7 @@ body{
         header{
             
             .head__container{
-                height: 61.5em;
+                min-height: 61.5em;
     
                 .zuri__logo{
                     margin: 8em 0;
@@ -419,7 +419,7 @@ body{
                 }
 
                 .btn__container{
-                    margin: 9em 0 0 0;
+                    margin: 9em 0 5em 0;
                     display: grid;
                     grid-template-areas: 
                     'red-button'
