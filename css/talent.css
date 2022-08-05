@@ -1,0 +1,72 @@
+@import './general.css';
+body .body-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+body .body-content nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 7em;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+}
+body .body-content nav .nav__container {
+  max-width: 144em;
+  height: inherit;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+body .body-content nav .nav__container .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: var(--gap);
+       column-gap: var(--gap);
+  --gap: 3em;
+}
+body .body-content nav .nav__container .nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -moz-column-gap: var(--gap);
+       column-gap: var(--gap);
+  font-size: 1.6rem;
+}
+body .body-content nav .nav__container .nav ul li {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  list-style: none;
+}
+body .body-content nav .nav__container .nav ul li a {
+  text-decoration: none;
+}
+body .body-content nav .nav__container .nav a {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  cursor: pointer;
+  outline: none;
+}
+body .body-content nav .nav__container .nav a button {
+  background-color: var(--tag-color);
+  color: var(--white);
+  min-width: 6em;
+  border: none;
+  border-radius: 2em;
+  font-size: 1.6rem;
+  padding: 0.5em 1.5em;
+  outline: none;
+}
+body .body-content header .header-content .img .head-image img {
+  width: 5em;
+}
+body .body-content main .main-content section .world .people-container .img img {
+  width: 5em;
+}/*# sourceMappingURL=talent.css.map */

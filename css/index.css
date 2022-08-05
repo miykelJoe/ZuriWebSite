@@ -1,21 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Averta Standard", sans-serif;
-}
-
-:root {
-  --text-color: #514949;
-  --tag-color: #E7332B;
-  --white: #fff;
-  --card-bg-color: #FFFAFA;
-}
-
+@import './general.css';
 body {
   font-weight: 400;
 }
