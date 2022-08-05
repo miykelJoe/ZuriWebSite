@@ -230,6 +230,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         
         .footer__container{
             max-width: 114em;
@@ -255,6 +256,7 @@ body{
                     }
 
                     p{
+                        color: var(--text-color);
                         opacity: .9;
                     }
                     a{
@@ -269,6 +271,9 @@ body{
 
                     p{
                         font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 1.5em;
+                        opacity: .9;
                     }
                 }
 
@@ -299,14 +304,219 @@ body{
 
             .text{
                 font-size: 1.6rem;
+                font-weight: 600;
                 display: flex;
                 justify-content: center;
                 margin-bottom: 9em;
+                opacity: .7;
             }
         }
+    }
+}
 
+@media (max-width: 1000px){
+
+    body{
+        font-weight: 400;
+        --side-padding: 3em;
+        header{
+            
+            .head__container{
+    
+                .zuri__logo{
+                    margin: 8em 0;
+                }
+            }
+        }
         
+        main{
+            padding: 0 var(--side-padding);
+            
+            .main__container{
+                max-width: 144em;
+    
+                .card__container{
+                    width: 100%;
+                    display: grid;
+                    grid-template-areas: 
+                    'training'
+                    'internship'
+                    'talent';
+                    row-gap: 3em;
+    
+                    .card{
+                        background-color: var(--card-bg-color);
+                        max-width: inherit;
+                        padding: 6em 3em;
+    
+                    }
+                    
+                    .training-card-container{
+                        grid-area: training;
+    
+                        .training-card{
+    
+                            .dots{
+                                display: none;
+                            }
+                        }
+                    }
+                    
+                    .internship-card-container{
+                        grid-area: internship;
+                    }
+                    
+                    .talent-card-container{
+                        grid-area: talent;
+    
+                        .talent-card{
+    
+                            .dots{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        footer{        
+            padding: 0 var(--side-padding);
+            
+            .footer__container{
 
+              
+    
+                .text{
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    color: var(--text-color);
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 7em;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width: 780px){
+
+    body{
+        font-weight: 400;
+        --side-padding: 3em;
+        header{
+            
+            .head__container{
+                height: 61.5em;
+    
+                .zuri__logo{
+                    margin: 8em 0;
+                }
+
+                .zuri{
+                    padding: 1em;
+                }
+
+                .btn__container{
+                    margin: 9em 0 0 0;
+                    display: grid;
+                    grid-template-areas: 
+                    'red-button'
+                    'white-button';
+                    row-gap: 2.4em;
+                    place-items: center;
+                }
+            }
+        }
+        
+        main{
+            padding: 0 var(--side-padding);
+            
+            .main__container{
+                max-width: 144em;
+
+                .header{
+                    margin: 5em 0 .5rem 0;
+                }
+    
+                .card__container{
+                    width: 100%;
+                    display: grid;
+                    grid-template-areas: 
+                    'training'
+                    'internship'
+                    'talent';
+                    row-gap: 3em;
+    
+                    .card{
+                        background-color: var(--card-bg-color);
+                        max-width: inherit;
+                        padding: 6em 3em;
+    
+                    }
+                    
+                    .training-card-container{
+                        grid-area: training;
+    
+                        .training-card{
+    
+                            .dots{
+                                display: none;
+                            }
+                        }
+                    }
+                    
+                    .internship-card-container{
+                        grid-area: internship;
+                    }
+                    
+                    .talent-card-container{
+                        grid-area: talent;
+    
+                        .talent-card{
+    
+                            .dots{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        footer{        
+            padding: 0 var(--side-padding);
+            
+            .footer__container{
+
+                .card__container{
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    row-gap: 3.5em;
+    
+                    .card{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1em;
+                        font-size: 1.6rem;
+                        text-align: center;
+    
+                        h3{
+                            color: var(--text-color);
+                            font-weight: 600;
+                            font-size: 2.4rem;
+                        }
+                    }
+
+                    .img{
+                        width: 9.4em;
+                    }
+                }
+            }
+        }
     }
 }

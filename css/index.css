@@ -189,6 +189,7 @@ body footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 body footer .footer__container {
   max-width: 114em;
@@ -213,6 +214,7 @@ body footer .footer__container .card__container .card h3 {
   font-weight: 600;
 }
 body footer .footer__container .card__container .card p {
+  color: var(--text-color);
   opacity: 0.9;
 }
 body footer .footer__container .card__container .card a {
@@ -221,6 +223,9 @@ body footer .footer__container .card__container .card a {
 }
 body footer .footer__container .card__container .contact p {
   font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  opacity: 0.9;
 }
 body footer .footer__container .card__container .social__links {
   display: flex;
@@ -242,7 +247,145 @@ body footer .footer__container .h__line--container .horizontal__line {
 }
 body footer .footer__container .text {
   font-size: 1.6rem;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   margin-bottom: 9em;
+  opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-weight: 400;
+    --side-padding: 3em;
+  }
+  body header .head__container .zuri__logo {
+    margin: 8em 0;
+  }
+  body main {
+    padding: 0 var(--side-padding);
+  }
+  body main .main__container {
+    max-width: 144em;
+  }
+  body main .main__container .card__container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "training" "internship" "talent";
+    row-gap: 3em;
+  }
+  body main .main__container .card__container .card {
+    background-color: var(--card-bg-color);
+    max-width: inherit;
+    padding: 6em 3em;
+  }
+  body main .main__container .card__container .training-card-container {
+    grid-area: training;
+  }
+  body main .main__container .card__container .training-card-container .training-card .dots {
+    display: none;
+  }
+  body main .main__container .card__container .internship-card-container {
+    grid-area: internship;
+  }
+  body main .main__container .card__container .talent-card-container {
+    grid-area: talent;
+  }
+  body main .main__container .card__container .talent-card-container .talent-card .dots {
+    display: none;
+  }
+  body footer {
+    padding: 0 var(--side-padding);
+  }
+  body footer .footer__container .text {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7em;
+  }
+}
+@media (max-width: 780px) {
+  body {
+    font-weight: 400;
+    --side-padding: 3em;
+  }
+  body header .head__container {
+    height: 61.5em;
+  }
+  body header .head__container .zuri__logo {
+    margin: 8em 0;
+  }
+  body header .head__container .zuri {
+    padding: 1em;
+  }
+  body header .head__container .btn__container {
+    margin: 9em 0 0 0;
+    display: grid;
+    grid-template-areas: "red-button" "white-button";
+    row-gap: 2.4em;
+    place-items: center;
+  }
+  body main {
+    padding: 0 var(--side-padding);
+  }
+  body main .main__container {
+    max-width: 144em;
+  }
+  body main .main__container .header {
+    margin: 5em 0 0.5rem 0;
+  }
+  body main .main__container .card__container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "training" "internship" "talent";
+    row-gap: 3em;
+  }
+  body main .main__container .card__container .card {
+    background-color: var(--card-bg-color);
+    max-width: inherit;
+    padding: 6em 3em;
+  }
+  body main .main__container .card__container .training-card-container {
+    grid-area: training;
+  }
+  body main .main__container .card__container .training-card-container .training-card .dots {
+    display: none;
+  }
+  body main .main__container .card__container .internship-card-container {
+    grid-area: internship;
+  }
+  body main .main__container .card__container .talent-card-container {
+    grid-area: talent;
+  }
+  body main .main__container .card__container .talent-card-container .talent-card .dots {
+    display: none;
+  }
+  body footer {
+    padding: 0 var(--side-padding);
+  }
+  body footer .footer__container .card__container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3.5em;
+  }
+  body footer .footer__container .card__container .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  body footer .footer__container .card__container .card h3 {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+  body footer .footer__container .card__container .img {
+    width: 9.4em;
+  }
 }/*# sourceMappingURL=index.css.map */
