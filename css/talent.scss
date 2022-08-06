@@ -3,6 +3,7 @@
 :root{
     --padding: .5em 1.5em;
     --para-color: #787878;
+    --max-width: 144em;
 }
 
 body{
@@ -25,7 +26,7 @@ body{
             z-index: 20;
             
             .nav__container{
-                max-width: 144em;
+                max-width: var(--max-width);
                 height: inherit;
                 width: 85%;
                 display: flex;
@@ -114,9 +115,9 @@ body{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                max-width: 144em;
+                max-width: var(--max-width);
                 width: 85%;
-                margin-top: 25em;
+                margin-top: 20em;
                 overflow: hidden;
                 
                 .text{
@@ -230,24 +231,125 @@ body{
         }
 
         main{
-
+            width: 100%;
+            margin: 13em 0 0 0;
+            
             .main-content{
+                width: 100%;
+                
+                
+                .first-section{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: inherit;
+                    border: none;
+                    
+                    .world-container{
+                        width: inherit;
+                        background-image: url(../media/images/talent/bgsection2.063bd869082548bafa74.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 40em;
+                        
+                        .world{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            padding-top: 30em;
 
-                section{
-
-                    .world{
-
-                        .people-container{
-
-                            .img{
-
-                                img{
-                                    width: 5em;
-                                }
+                            .white-space{
+                                background-color: #fff;
+                                width: 100%;
+                                height: 12em;
                             }
+                            
+                            .text-people{
+                                max-width: var(--max-width);
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: -32em;
+
+                                .text-country{
+                                    width: 50%;
+
+                                    .text{
+                                        h1{
+                                            font-size: 4rem;
+
+                                            span{
+                                                color: var(--tag-color);
+                                            }
+                                        }
+
+                                        h4{
+                                            color: #161617;
+                                            font-size: 1.9rem;
+                                            margin-top: 1em;
+                                        }
+
+                                        p{
+                                            color: #787878;
+                                            font-size: 1.9rem;
+                                            margin-top: .7em;
+                                        }
+
+                                    }
+
+                                    .country-container{
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        column-gap: 2em;
+                                        margin-top: 2em;
+
+                                        .country{
+                                            background-color: #fff;
+                                            width: 6.5em;
+                                            padding: .7em;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border-radius: .8em;
+
+                                            img{
+                                                width: 4em;
+                                            }
+                                        }
+
+                                    }
+                                }
+    
+                                .people-container{
+                                    width: 50%;
+                                    display: flex;
+                                    justify-content: flex-end;
+
+                                    .img{
+            
+                                        img{
+                                            width: 50em;
+                                        }
+                                    }
+                                }
+
+                            }
+                            
                         }
+    
                     }
                 }
+                
             }
         }
     }
