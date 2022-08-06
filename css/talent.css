@@ -3,6 +3,7 @@
   --padding: .5em 1.5em;
   --para-color: #787878;
   --max-width: 144em;
+  --h1-fs: 4rem;
 }
 
 body .body-content {
@@ -117,7 +118,7 @@ body .body-content header .header-content .text .text-img {
   width: max-content;
 }
 body .body-content header .header-content .text .text-img h1 {
-  font-size: 4rem;
+  font-size: var(--h1-fs);
   letter-spacing: 0.00938em;
   position: relative;
 }
@@ -245,7 +246,7 @@ body .body-content main .main-content .first-section .world-container .world .te
   width: 50%;
 }
 body .body-content main .main-content .first-section .world-container .world .text-people .text-country .text h1 {
-  font-size: 4rem;
+  font-size: var(--h1-fs);
 }
 body .body-content main .main-content .first-section .world-container .world .text-people .text-country .text h1 span {
   color: var(--tag-color);
@@ -286,4 +287,17 @@ body .body-content main .main-content .first-section .world-container .world .te
 }
 body .body-content main .main-content .first-section .world-container .world .text-people .people-container .img img {
   width: 50em;
+}
+body .body-content main .main-content .second-section {
+  display: flex;
+  justify-content: center;
+}
+body .body-content main .main-content .second-section .skills-container {
+  max-width: var(--max-width);
+  width: 100%;
+  background-color: #787878;
+}
+body .body-content main .main-content .second-section .skills-container .skills h1 {
+  font-size: var(--h1-fs);
+  margin-bottom: 0.5em;
 }/*# sourceMappingURL=talent.css.map */

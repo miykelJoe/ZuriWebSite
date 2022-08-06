@@ -4,6 +4,7 @@
     --padding: .5em 1.5em;
     --para-color: #787878;
     --max-width: 144em;
+    --h1-fs: 4rem;
 }
 
 body{
@@ -131,7 +132,7 @@ body{
 
                         
                         h1{
-                            font-size: 4rem;
+                            font-size: var(--h1-fs);
                             letter-spacing: 0.00938em;
                             position: relative;
                             
@@ -286,7 +287,7 @@ body{
 
                                     .text{
                                         h1{
-                                            font-size: 4rem;
+                                            font-size: var(--h1-fs);
 
                                             span{
                                                 color: var(--tag-color);
@@ -347,6 +348,26 @@ body{
                             
                         }
     
+                    }
+                }
+
+                .second-section{
+                    display: flex;
+                    justify-content: center;
+
+
+                    .skills-container{
+                        max-width: var(--max-width);
+                        width: 100%;
+                        background-color: #787878;
+
+                        .skills{
+
+                            h1{
+                                font-size: var(--h1-fs);
+                                margin-bottom: .5em;
+                            }
+                        }
                     }
                 }
                 
