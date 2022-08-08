@@ -45,6 +45,11 @@ body header .head__container .zuri p {
 body header .head__container .zuri p a {
   text-decoration: none;
   color: var(--tag-color);
+  background-color: transparent;
+}
+body header .head__container .zuri p a:hover {
+  text-decoration: none;
+  color: var(--tag-color-hover);
 }
 body header .head__container .btn__container {
   margin: 9em 0 0 0;
@@ -204,6 +209,9 @@ body footer .footer__container .card__container .card p {
 body footer .footer__container .card__container .card a {
   color: var(--tag-color);
   text-decoration: none;
+}
+body footer .footer__container .card__container .card a:hover {
+  color: var(--tag-color-hover);
 }
 body footer .footer__container .card__container .contact p {
   font-size: 1.4rem;

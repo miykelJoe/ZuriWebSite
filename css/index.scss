@@ -50,6 +50,11 @@ body{
                     a{
                         text-decoration: none;
                         color: var(--tag-color);
+                        background-color: transparent;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                        color: var(--tag-color-hover);
                     }
                 }
             }
@@ -246,8 +251,10 @@ body{
                     }
                     a{
                         color: var(--tag-color);
-                        text-decoration: none;
-                        
+                        text-decoration: none; 
+                    }
+                    a:hover{
+                        color: var(--tag-color-hover);
                     }
                 }
 
