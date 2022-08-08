@@ -1122,6 +1122,98 @@ body{
                     }
                 }
             }
+
+            header{
+                display: flex;
+                justify-content: center;
+                margin-top: 7em;
+                position: relative;
+                
+                
+                .header-content{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    max-width: var(--max-width);
+                    width: 85%;
+                    margin-top: 20em;
+                    overflow: hidden;
+                    
+                    .text{
+                        width: 100%;
+                        
+                        .text-img{
+                            width: 75%;
+                            display: flex;
+                            margin-bottom: 5em;
+                            width: max-content;
+    
+                            
+                            h1{
+                                font-size: var(--h1-fs);
+                                letter-spacing: 0.00938em;
+                                position: relative;
+                                
+                                span{
+                                    color: var(--tag-color);
+                                }
+                                img{
+                                    margin-right: 4em;
+                                    z-index: 1;
+                                    overflow: visible;
+                                    position: absolute;
+                                    top: .5em;
+                                    right: -4.5em;
+        
+                                }
+                            }
+                        }
+
+                        
+                        .para-btn{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            
+                            p{
+                                width: 80%;
+                                font-size: 1.9rem;
+                            }
+                        
+                        
+                        }
+                    }
+    
+                    .img{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .head-image{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            img{
+                                width: 70%;
+    
+                            }
+                        }
+    
+                        .head-line{
+                            
+                            img{
+                                display: none;
+                                min-width: 25em;
+    
+                            }
+                        }
+                    }
+                }
+            }
  
             main{
                 
@@ -1222,6 +1314,7 @@ body{
                                     font-size: var(--h1-fs-1200px);
                                     margin-bottom: 1em;
                                     color: var(--black);
+                                    text-align: center;
                                 }
                                 
                                 span{
@@ -1283,27 +1376,24 @@ body{
     body{
 
         .body-content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-
+           
             header{
                 .header-content{
+                    margin-top: 4em;
+
                     .text{
                         .text-img{
-                            width: 99%;
 
-                            h1{
-                                
-                            img{
-                                top: 1.5em;
-                                left: 5.6em;
-                                
-                            }
-                        }
+                    h1{
+                        width: 90%;
+
+                        img{
+                            left: 5em;
+                            top: 1.5em;
                         }
                     }
+                }
+            }
                 }
             }
  
@@ -1315,58 +1405,46 @@ body{
                         
                         .world-container{
                             margin-bottom: 5em;
-                            .world{
-                                height: fit-content;
-                                .text-people{
-                                    display: flex;
-                                    flex-flow: column;
-                                    row-gap: 5em;
-                                    
-                                    
-                                    .text-country{
-                                        width: 50%;
-    
-                                        .text{
-                                            width: 98%;
-    
-                                            h1{
-                                                font-size: 3rem;
-                                                
-                                                span{
-                                                    color: var(--tag-color);
+                            .world {
+                                    height: fit-content;
+                            
+                                    .text-people {
+                                        display: flex;
+                                        flex-flow: column;
+                                        row-gap: 5em;
+                            
+                            
+                                        .text-country {
+                                            width: 100%;
+                            
+                                            .text {
+                                                width: 98%;
+                            
+                                                h1 {
+                                                    font-size: 3rem;
+                            
+                                                    span {
+                                                        color: var(--tag-color);
+                                                    }
+                                                }
+                            
+                                            }
+                                        }
+                            
+                            
+                                        .people-container {
+                                            width: 100%;
+                            
+                                            .img {
+                                                img {
+                                                    max-width: 50em;
                                                 }
                                             }
-    
                                         }
+                            
                                     }
-                                    
-                                    
-                                    .people-container{
-                                        width: 50%;
-                                        display: flex;
-                                        justify-content: flex-end;
-                                        height: fit-content;
-
-                                        .img{
-                                            height: fit-content;
-                                            margin-bottom: 5em;
-                
-                                            img{
-                                                width: 50em;
-                                            }
-                                        }
-                                    }
-    
+                            
                                 }
-                                
-                            }
-    
-                            .white-space{
-                                background-color: transparent;
-                                width: 100%;
-                                min-height: 22em;
-                                height: fit-content;
-                            }
         
                         }
                     }
@@ -1384,11 +1462,11 @@ body{
                                 z-index: 2;
                                 
                                 h1{
-                                    width: 15em;
-                                    max-width: 58%;
-                                    font-size: var(--h1-fs-1200px);
+                                    max-width: 100%;
+                                    font-size: 2.8rem;
                                     margin-bottom: 1em;
                                     color: var(--black);
+                                    text-align: left;
                                 }
                                 
                                 span{
@@ -1396,27 +1474,12 @@ body{
                                 }
                                 
                                 .skills-flex{
-                                    // width: 500;
                                     color: #787878;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
                                     
     
-                                    .btn{
-                                        background-color: #fff;
-                                        border: none;
-                                        border-radius: .4em;
-                                        box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
-                                        padding: 1em 1.3em;
-                                        font-size: 1.8rem;
-                                        font-weight: 400;
-                                        text-align: center;
-                                        transition: transform .3s ease,
-                                                    transform .3s ease;
-                                    }
-    
-                                    .btn:hover{
-                                        transition: .3s;
-                                        transform: translateY(-25%) ; // .3s ease, transform .3s ease;
-                                    }
+           
                                 }
                                 .second{
                                     gap: .8em 1.7em;
@@ -1430,6 +1493,69 @@ body{
                             }
                         }
                     }
+
+                    .third-section{
+                        
+    
+                        .talent{
+
+                            .red-curve-line{
+                                position: absolute;
+                                left: 0;
+                                bottom: 50%;
+                                z-index: 1;
+                            }
+    
+                            .card-head{
+                                h1{
+                                    font-size: var(--h1-fs-1200px);
+    
+                                }
+                            }
+    
+                            .card-container{
+                                width: 100%;
+                                display: grid;
+                                grid-template-areas: 
+                                'people' 
+                                'mech'
+                                'hands' 
+                                'write'
+                                'many';
+                                grid-auto-flow: 1fr;
+                                gap: 1.5em;
+                                
+                         
+
+                                .people{
+                                    grid-area: people;
+                                }
+                                .mech{
+                                    grid-area: mech;
+                                }
+                                .hands{
+                                    grid-area: hands;
+                                }
+                                .write{
+                                    grid-area: write;
+                                }
+                                .many{
+                                    grid-area: many;
+                                }
+    
+                            }
+    
+                            .btn-container{
+                                .btn{
+                                    padding: .8em 3.5em;
+                                    
+                                }
+    
+                            }
+                        }
+    
+    
+                    }
     
                     
                     
@@ -1440,3 +1566,4 @@ body{
         }
     }
 }
+
