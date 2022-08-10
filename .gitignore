@@ -1,0 +1,2 @@
+# the following code will ignore anything that is a css file withing the css/ directory
+css/*.css
