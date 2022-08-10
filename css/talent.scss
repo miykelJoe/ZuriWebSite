@@ -1374,6 +1374,10 @@ body{
                     
                 }
             }
+
+            footer{
+                
+            }
     
            
         }
@@ -1586,9 +1590,10 @@ body{
                     .up-footer-content{
                         width: 100%;
                         display: flex;
-                        flex-direction: row;
+                        flex-wrap: wrap;
                         justify-content: space-between;
                         align-items: center;
+                        gap: 2em;
                         margin-top: .6em;
     
                         .zuri{
@@ -1617,13 +1622,14 @@ body{
                     }
                     
                     .down-footer-content{
+                        // background-color: aquamarine;
                         width: 100%;
                         display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
+                        flex-wrap: wrap-reverse;
+                        justify-content: center;
                         align-items: center;
                         margin-bottom: 2em;
+                        gap: 2.5em;
                         
                         p{
                             font-size: 1.6rem;
@@ -1748,7 +1754,147 @@ body{
                                 }
         
                         }
-                    }                
+                    }
+
+                    .third-section{
+    
+                        .talent{
+
+                            .red-curve-line{
+                                position: absolute;
+                                left: 0;
+                                bottom: 50%;
+                                z-index: 1;
+                            }
+    
+                            .card-head{
+                                h1{
+                                    font-size: var(--h1-fs-1200px);
+                                    text-align: center;
+    
+                                }
+                            }
+    
+                            .card-container{
+                                width: 100%;
+                                display: grid;
+                                grid-template-areas: 
+                                'people' 
+                                'mech'
+                                'hands' 
+                                'write'
+                                'many';
+                                grid-auto-flow: 1fr;
+                                gap: 1.5em;
+                                
+                         
+                                .card{
+                                    // background-color: aquamarine;
+                                    padding: 3.5em;
+
+                                    p{
+                                        // background-color: aqua;
+                                        margin: 0;
+                                    }
+                                }
+                                .people{
+                                    grid-area: people;
+                                }
+                                .mech{
+                                    grid-area: mech;
+                                }
+                                .hands{
+                                    grid-area: hands;
+                                }
+                                .write{
+                                    grid-area: write;
+                                }
+                                .many{
+                                    grid-area: many;
+                                }
+    
+                            }
+    
+                            .btn-container{
+                                .btn{
+                                    padding: .8em 3.5em;
+                                    
+                                }
+    
+                            }
+                        }
+    
+    
+                    }
+                }
+            }
+
+            footer{
+                
+                .footer-content{
+                    width: 92.5%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 6.9em 0 0 0;
+                    row-gap: 5em;
+                    padding-right: 2em;
+    
+                    .up-footer-content{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 2em;
+                        margin-top: .6em;
+    
+                        .zuri{
+    
+                            img:hover{
+                                cursor: pointer;
+                            }
+    
+                        }
+    
+                        .social-links{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            column-gap: 1.5em;
+        
+                            img{
+                                width: 3em;
+                            }
+    
+                            img:hover{
+                                cursor: pointer;
+                            }
+                            
+                        }
+                    }
+                    
+                    .down-footer-content{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        margin-bottom: 2em;
+                        gap: 2em;
+                        
+                        p{
+                            font-size: 1.6rem;
+    
+                            a{
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                        }
+                    }
+    
                 }
             }
     

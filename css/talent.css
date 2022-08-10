@@ -1193,9 +1193,10 @@ body .body-content footer .footer-content .down-footer-content p a {
   body .body-content footer .footer-content .up-footer-content {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 2em;
     margin-top: 0.6em;
   }
   body .body-content footer .footer-content .up-footer-content .zuri img:hover {
@@ -1217,11 +1218,11 @@ body .body-content footer .footer-content .down-footer-content p a {
   body .body-content footer .footer-content .down-footer-content {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
     align-items: center;
     margin-bottom: 2em;
+    gap: 2.5em;
   }
   body .body-content footer .footer-content .down-footer-content p {
     font-size: 1.6rem;
@@ -1297,6 +1298,99 @@ body .body-content footer .footer-content .down-footer-content p a {
   }
   body .body-content main .main-content .first-section .world-container .world .text-people .people-container .img img {
     width: 5em;
+  }
+  body .body-content main .main-content .third-section .talent .red-curve-line {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    z-index: 1;
+  }
+  body .body-content main .main-content .third-section .talent .card-head h1 {
+    font-size: var(--h1-fs-1200px);
+    text-align: center;
+  }
+  body .body-content main .main-content .third-section .talent .card-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "people" "mech" "hands" "write" "many";
+    grid-auto-flow: 1fr;
+    gap: 1.5em;
+  }
+  body .body-content main .main-content .third-section .talent .card-container .card {
+    padding: 3.5em;
+  }
+  body .body-content main .main-content .third-section .talent .card-container .card p {
+    margin: 0;
+  }
+  body .body-content main .main-content .third-section .talent .card-container .people {
+    grid-area: people;
+  }
+  body .body-content main .main-content .third-section .talent .card-container .mech {
+    grid-area: mech;
+  }
+  body .body-content main .main-content .third-section .talent .card-container .hands {
+    grid-area: hands;
+  }
+  body .body-content main .main-content .third-section .talent .card-container .write {
+    grid-area: write;
+  }
+  body .body-content main .main-content .third-section .talent .card-container .many {
+    grid-area: many;
+  }
+  body .body-content main .main-content .third-section .talent .btn-container .btn {
+    padding: 0.8em 3.5em;
+  }
+  body .body-content footer .footer-content {
+    width: 92.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6.9em 0 0 0;
+    row-gap: 5em;
+    padding-right: 2em;
+  }
+  body .body-content footer .footer-content .up-footer-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 0.6em;
+  }
+  body .body-content footer .footer-content .up-footer-content .zuri img:hover {
+    cursor: pointer;
+  }
+  body .body-content footer .footer-content .up-footer-content .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+  }
+  body .body-content footer .footer-content .up-footer-content .social-links img {
+    width: 3em;
+  }
+  body .body-content footer .footer-content .up-footer-content .social-links img:hover {
+    cursor: pointer;
+  }
+  body .body-content footer .footer-content .down-footer-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+    gap: 2em;
+  }
+  body .body-content footer .footer-content .down-footer-content p {
+    font-size: 1.6rem;
+  }
+  body .body-content footer .footer-content .down-footer-content p a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 @media (max-width: 400px) {
