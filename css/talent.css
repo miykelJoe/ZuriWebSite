@@ -117,7 +117,7 @@ body .body-content header .header-content {
   align-items: center;
   max-width: var(--max-width);
   width: 85%;
-  margin-top: 20em;
+  margin-top: 30em;
   overflow: hidden;
 }
 body .body-content header .header-content .text {
@@ -201,13 +201,13 @@ body .body-content header .header-content .img .head-image img {
   width: 70%;
 }
 body .body-content header .header-content .img .head-line {
+  mix-blend-mode: soft-light;
   position: absolute;
   right: 0;
-  bottom: 10em;
-  opacity: 0.8;
+  bottom: 12em;
 }
 body .body-content header .header-content .img .head-line img {
-  width: 25em;
+  width: 14.5em;
 }
 body .body-content main {
   width: 100%;
@@ -1573,8 +1573,4 @@ body .body-content footer .footer-content .down-footer-content p a {
   body .body-content main .main-content .third-section .talent .btn-container .btn {
     padding: 0.8em 1.3em;
   }
-<<<<<<< HEAD
 }/*# sourceMappingURL=talent.css.map */
-=======
-}/*# sourceMappingURL=talent.css.map */
->>>>>>> 9535dcde66db3aa776499ebe3011dcbc13c8c61e

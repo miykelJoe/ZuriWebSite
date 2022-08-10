@@ -136,7 +136,7 @@ body{
                 align-items: center;
                 max-width: var(--max-width);
                 width: 85%;
-                margin-top: 20em;
+                margin-top: 30em;
                 overflow: hidden;
                 
                 .text{
@@ -240,13 +240,13 @@ body{
                     }
 
                     .head-line{
+                        mix-blend-mode: soft-light;
                         position: absolute;
                         right: 0;
-                        bottom: 10em;
-                        opacity: .8;
+                        bottom: 12em;
                         
                         img{
-                            width: 25em;
+                            width: 14.5em;
 
                         }
                     }
