@@ -366,7 +366,9 @@ body{
                                     justify-content: flex-end;
 
                                     .img{
-            
+                                        display: flex;
+                                        justify-content: flex-end;
+
                                         img{
                                             width: 50em;
                                         }
@@ -894,7 +896,7 @@ body{
                                         justify-content: flex-end;
     
                                         .img{
-                                            min-width: 40em;
+                                            min-width: 30em;
                 
                                             img{
                                                 min-width: inherit;
@@ -1260,17 +1262,23 @@ body{
                                     
                                     
                                     .people-container{
-                                        width: 50%;
+                                        width: 100%;
                                         display: flex;
-                                        justify-content: flex-end;
+                                        justify-content: center;
+                                        align-items: center;
                                         height: fit-content;
-
+                                        
                                         .img{
                                             height: fit-content;
                                             margin-bottom: 5em;
-                
-                                            img{
-                                                width: 50em;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 100%;
+                                            
+                                            #people{
+                                                width: 60%;
+                                                min-width: 30em;
                                             }
                                         }
                                     }
@@ -1372,7 +1380,7 @@ body{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
     body{
 
         .body-content{
@@ -1386,6 +1394,7 @@ body{
 
                     h1{
                         width: 90%;
+                        font-size: 3em;
 
                         img{
                             left: 5em;
@@ -1561,9 +1570,471 @@ body{
                     
                 }
             }
+
+            footer{
+                
+                .footer-content{
+                    width: 92.5%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 6.9em 0 0 0;
+                    row-gap: 5em;
+                    padding-right: 2em;
+    
+                    .up-footer-content{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: .6em;
+    
+                        .zuri{
+    
+                            img:hover{
+                                cursor: pointer;
+                            }
+    
+                        }
+    
+                        .social-links{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            column-gap: 1.5em;
+        
+                            img{
+                                width: 3em;
+                            }
+    
+                            img:hover{
+                                cursor: pointer;
+                            }
+                            
+                        }
+                    }
+                    
+                    .down-footer-content{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 2em;
+                        
+                        p{
+                            font-size: 1.6rem;
+    
+                            a{
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                        }
+                    }
+    
+                }
+            }
     
            
         }
     }
 }
 
+@media (max-width: 550px){
+    body{
+
+        .body-content{
+           
+            header{
+                .header-content{
+                    margin-top: 4em;
+
+                    .text{
+                        .text-img{
+
+                    h1{
+                        width: 90%;
+
+                        img{
+                            left: 5em;
+                            top: 1.5em;
+                        }
+                    }
+                }
+                .para-btn{
+                    p{
+                        font-size: 1.5rem;
+                    }
+                    .btn-holder{
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        .head-btn{
+                            padding: .8em 1.6em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    main{
+        
+        .main-content{
+            
+            .first-section{
+                
+                .world-container{
+                    margin-bottom: 5em;
+                    .world {
+                        height: fit-content;
+                        
+                        
+                        .text-people {
+                            row-gap: 5em;
+                            display: grid;
+                            grid-template-areas: 
+                            'text-country'
+                            'people';
+                            place-content: center;
+                                        
+                                        
+                                        .text-country {
+                                            width: 100%;
+                                            grid-area: text-country;
+                                            
+                                            .text {
+                                                width: 80%;
+                                                
+                                                h1 {
+                                                    font-size: 3rem;
+                            
+                                                    span {
+                                                        color: var(--tag-color);
+                                                    }
+                                                }
+                            
+                                            }
+                                            .country-container{
+                                                gap: 1em;
+                                                .country{
+                                                }
+                                            }
+                                        }
+                            
+                                        .people-container{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            grid-area: people;
+                                            
+                                            .img{
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+
+                                                img{
+                                                    width: 5em;
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+                            
+                                }
+        
+                        }
+                    }                
+                }
+            }
+    
+           
+        }
+    }
+}
+
+@media (max-width: 400px){
+    body{
+
+        .body-content{
+
+            nav{
+                
+                .nav__container{
+    
+                   
+    
+                    .nav{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: var(--gap);
+                        transform: scale(1.2);
+                        
+                        --gap: 3.2em;
+                        
+                        
+    
+                        a{
+                            min-width: max-content;
+                            cursor: pointer;
+                            outline: none;
+                            
+                            button{
+                                background-color: var(--tag-color);
+                                color: var(--white);
+                                min-width: 6em;
+                                border: none;
+                                border-radius: 0 0 .35em 0;
+                                font-size: clamp(1rem, 1vw, 1.3rem);
+                                font-weight: 400;
+                                padding: var(--padding);
+                                outline: none;
+                            }
+    
+                            button:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+           
+            header{
+                .header-content{
+                    margin-top: 4em;
+
+                    .text{
+                        .text-img{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            h1{
+                                width: 60%;
+
+                        img{
+                            left: 4.2em;
+                            top: 1.5em;
+                        }
+                    }
+                }
+                .para-btn{
+                    p{
+                        font-size: 1.5rem;
+                    }
+                    .btn-holder{
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        .head-btn{
+                            padding: .5em 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    main{
+        
+        .main-content{
+            
+            .first-section{
+                
+                .world-container{
+                    margin-bottom: 5em;
+                    .world {
+                        height: fit-content;
+
+                        .text-people {
+                            row-gap: 5em;
+                            display: grid;
+                            grid-template-areas: 
+                            'text-country'
+                            'people';
+                            place-content: center;            
+                                        
+                                        .text-country {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            grid-area: text-country;
+
+                                            .text {
+                                                width: 80%;
+                                                display: flex;
+                                                align-items: flex-start;
+                                                justify-content: flex-start;
+                                                
+                                                h1 {
+                                                    text-align: left;
+                                                    font-size: 3rem;
+                            
+                                                    span {
+                                                        color: var(--tag-color);
+                                                    }
+                                                }
+                            
+                                            }
+                                            .country-container{
+                                                display: flex;
+                                                justify-content: center;
+                                                width: 80%;
+                                                gap: 1em;
+
+                                                .country{
+                                                    img{
+                                                        width: 3em;
+                                                    }
+                                                }
+                                            }
+                                        }
+                            
+                                        .people-container{
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                            grid-area: people;
+                                            
+                                            .img{
+                                                width: 100%;
+                                                padding: 3em;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                align-items: center;
+                                                
+                                                img#people{
+                                                    min-width: 20em;
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
+    
+                    .second-section{
+
+                        .skills-container{
+                            
+                            .skills{
+                                width: 100%;
+                                display: flex;
+                                flex-flow: column;
+                                justify-content: center;
+                                align-items: center;
+                                z-index: 2;
+                                
+                                h1{
+                                    max-width: 100%;
+                                    font-size: 2.8rem;
+                                    margin-bottom: 1em;
+                                    color: var(--black);
+                                    text-align: left;
+                                }
+                                
+                                span{
+                                    color: var(--tag-color);
+                                }
+                                
+                                .skills-flex{
+                                    color: #787878;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    
+    
+           
+                                }
+                                .second{
+                                    gap: .8em 1.7em;
+
+                                }
+                            }
+    
+                            img{
+                                display: none;
+                                
+                            }
+                        }
+                    }
+
+                    .third-section{
+    
+                        .talent{
+
+                            .red-curve-line{
+                                position: absolute;
+                                left: 0;
+                                bottom: 50%;
+                                z-index: 1;
+                            }
+    
+                            .card-head{
+                                h1{
+                                    font-size: var(--h1-fs-1200px);
+    
+                                }
+                            }
+    
+                            .card-container{
+                                width: 100%;
+                                display: grid;
+                                grid-template-areas: 
+                                'people' 
+                                'mech'
+                                'hands' 
+                                'write'
+                                'many';
+                                grid-auto-flow: 1fr;
+                                gap: 1.5em;
+                                
+                         
+
+                                .people{
+                                    grid-area: people;
+                                }
+                                .mech{
+                                    grid-area: mech;
+                                }
+                                .hands{
+                                    grid-area: hands;
+                                }
+                                .write{
+                                    grid-area: write;
+                                }
+                                .many{
+                                    grid-area: many;
+                                }
+    
+                            }
+    
+                            .btn-container{
+                                .btn{
+                                    padding: .8em 1.3em;
+                                    
+                                }
+    
+                            }
+                        }
+    
+    
+                    }
+    
+                    
+                    
+                }
+            }
+    
+           
+        }
+    }
+}
