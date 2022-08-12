@@ -1,3 +1,2 @@
 # the following code will ignore anything that is a css and .map files withing the css/ directory
-css/*.css
 css/*.map
