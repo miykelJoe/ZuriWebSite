@@ -350,6 +350,7 @@ body main .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 8em;
 }
 body main .card-container .cards {
   max-width: 144em;
@@ -357,16 +358,21 @@ body main .card-container .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
-  margin-bottom: 1000em;
 }
 body main .card-container .cards .card {
-  border: 1px dotted;
+  background-color: #fff;
   border-radius: 18px;
+  box-shadow: 0 11px 22px rgba(231, 51, 43, 0.1);
+  padding: 5em 5.8em 9em;
+  transition: 0.3s;
   position: relative;
+  overflow: hidden;
 }
 body main .card-container .cards .card img {
   position: absolute;
-  right: 0;
+  right: -1em;
+  top: -0.5em;
+  width: 35%;
 }
 body main .card-container .cards .card h1 {
   font-size: 6em;
@@ -378,6 +384,30 @@ body main .card-container .cards .card .bold-text {
   font-size: 3.6em;
   color: var(--black);
   font-weight: 500;
+  line-height: 130%;
+  margin: 1em 0;
+}
+body main .card-container .cards .card .small-text {
+  font-size: 1.8em;
+  color: var(--black);
+  font-weight: 400;
+  line-height: 130%;
+}
+body main .card-container .cards .card:hover {
+  transform: translateY(-15px);
+  transition: 0.3s;
+}
+body main .card-container .cards .remote {
+  background-color: var(--tag-color);
+}
+body main .card-container .cards .remote h1 {
+  color: #fff;
+}
+body main .card-container .cards .remote .bold-text {
+  color: #fff;
+}
+body main .card-container .cards .remote .small-text {
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
@@ -510,6 +540,51 @@ body main .card-container .cards .card .bold-text {
   body header .header-foot .head-foot-content .span p {
     font-size: 1.8rem;
   }
+  body main .main-content .main-head .arrow-text .text .red-text {
+    color: var(--tag-color);
+    font-size: 2rem;
+  }
+  body main .main-content .main-head .arrow-text .text .main-text {
+    font-size: 3rem;
+  }
+  body main .card-container {
+    background: linear-gradient(180deg, rgba(255, 244, 240, 0), #fff4f0 17.19%, #fff4f0 84.37%, rgba(255, 244, 240, 0));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+  }
+  body main .card-container .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  body main .card-container .cards .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 11px 22px rgba(231, 51, 43, 0.1);
+    padding: 5em 5.8em 9em;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  body main .card-container .cards .card img {
+    position: absolute;
+    right: -1em;
+    top: -4em;
+    width: 40%;
+  }
+  body main .card-container .cards .remote {
+    background-color: var(--tag-color);
+  }
+  body main .card-container .cards .remote h1 {
+    color: #fff;
+  }
+  body main .card-container .cards .remote .bold-text {
+    color: #fff;
+  }
+  body main .card-container .cards .remote .small-text {
+    color: #fff;
+  }
 }
 @media (max-width: 900px) {
   body nav .nav-content .logo-container .logo img {
@@ -549,6 +624,44 @@ body main .card-container .cards .card .bold-text {
   }
   body header .header-foot .head-foot-content .span p {
     font-size: 1.8rem;
+  }
+  body main .main-content .main-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 4em;
+  }
+  body main .main-content .main-head .star-container .star {
+    width: 50%;
+    height: 100%;
+  }
+  body main .main-content .main-head .star-container .star img {
+    width: 65%;
+    margin: 1.5em 0;
+  }
+  body main .card-container .cards {
+    grid-template-columns: 1fr;
+  }
+  body main .card-container .cards .card {
+    background-color: #fff;
+  }
+  body main .card-container .cards .card:hover {
+    transform: translateY(-15px);
+    transition: 0.3s;
+  }
+  body main .card-container .cards .remote {
+    background-color: var(--tag-color);
+  }
+  body main .card-container .cards .remote h1 {
+    color: #fff;
+  }
+  body main .card-container .cards .remote .bold-text {
+    color: #fff;
+  }
+  body main .card-container .cards .remote .small-text {
+    color: #fff;
   }
 }
 @media (max-width: 700px) {
@@ -710,5 +823,48 @@ body main .card-container .cards .card .bold-text {
   body header .header-foot .head-foot-content .span p {
     font-size: 1.8rem;
     text-align: center;
+  }
+  body main .main-content .main-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 4em;
+  }
+  body main .main-content .main-head .arrow-text .text .red-text {
+    color: var(--tag-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  body main .main-content .main-head .arrow-text .text .main-text {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  body main .main-content .main-head .star-container {
+    display: none;
+  }
+  body main .card-container .cards {
+    grid-template-columns: 1fr;
+  }
+  body main .card-container .cards .card {
+    background-color: #fff;
+  }
+  body main .card-container .cards .card:hover {
+    transform: translateY(-15px);
+    transition: 0.3s;
+  }
+  body main .card-container .cards .remote {
+    background-color: var(--tag-color);
+  }
+  body main .card-container .cards .remote h1 {
+    color: #fff;
+  }
+  body main .card-container .cards .remote .bold-text {
+    color: #fff;
+  }
+  body main .card-container .cards .remote .small-text {
+    color: #fff;
   }
 }/*# sourceMappingURL=industry.css.map */
