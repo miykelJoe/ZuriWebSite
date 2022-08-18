@@ -476,6 +476,140 @@ body{
                 
             }
         }
+
+        .quality-training-container{
+            background-color: var(--tag-color);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 14em;
+
+            .text-img-container{
+                max-width: 144em;
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+                margin-top: 5em;
+
+                .text{
+                    color: #fff;
+                    margin-top: 2.4em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+
+                    .arrow-container{
+                        display: flex;
+                        justify-content: right;
+                        width: 85%;
+
+                        img{
+                            width: 23%;
+                        }
+                    }
+
+                    .small-text,
+                    .para{
+                        font-size: 1.8rem;
+                        line-height: 130%;
+                        font-weight: 400;
+                    }
+
+                    .bold-text{
+                        font-size: 4rem;
+                        line-height: 130%;
+                        font-weight: 700;
+                        margin-top: .25em;
+                    }
+
+                    .para{
+                        width: 75%;
+                        margin-top: 2em;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        button{
+                            color: var(--tag-color);
+                            margin: 2em 0;
+                            font-size: 2rem;
+                            padding: .8rem 2.8rem;
+                            border-radius: 7em;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            transition: .3s;
+                            box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, 
+                                        rgb(0 0 0 / 14%) 0px 2px 2px 0px, 
+                                        rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+                        }
+                        button:hover{
+                            transition: .3s;
+                            box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, 
+                                        rgb(0 0 0 / 14%) 0px 4px 5px 0px, 
+                                        rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+                        }
+                    }
+
+                    .btn-container{
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2.5em 6em;
+
+                        button{
+                            background-color: transparent;
+                            color: #fff;
+                            width: 100%;
+                            border: 2px solid #fff;
+                            outline: none;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            padding: .8em 1em;
+                            border-radius: 8em;
+                            cursor: no-drop;
+                            
+                            .btn-content{
+                                column-gap: 1em;
+                                display: flex;
+                                align-items: center;
+
+                                img{
+                                    width: 25%;
+                                }
+                                p{
+                                font-size: 2rem;
+                                font-weight: 400;
+                                line-height: 1.5;
+                            }
+                        }
+
+                        }
+                    }
+                }
+                
+                .img{
+                    margin-top: 2.4em;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .dots{
+                width: inherit;
+                
+                img{
+                    width: 10%;
+                    padding: 3.5em;
+                }
+            }
+        }
     }
 }
 
@@ -713,6 +847,62 @@ body{
                         }
                     }
                 }
+
+                .quality-training-container{
+        
+                    .text-img-container{
+                        grid-template-columns: 1fr;
+                        margin-top: 5em;
+        
+                        .text{
+        
+        
+                            .bold-text{
+                                font-size: 3rem;
+                            }
+        
+                            .para{
+                                width: 100%;
+                                }
+                         
+                            .btn-container{
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr 1fr;
+                                gap: 2.5em;
+        
+                                button{
+                                    padding: .6em 1em;
+                                    
+                                    .btn-content{
+                                        column-gap: .8em;
+                                        
+                                        p{
+                                        font-size: 1.6rem;
+                                    }
+                                }
+        
+                                }
+                            }
+                        }
+                        
+                        .img{
+                            margin-top: 2.4em;
+        
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+        
+                    .dots{
+                        
+                        img{
+                            width: 17%;
+                            padding: 3.5em;
+                        }
+                    }
+                }
             }
     }
 }
@@ -844,6 +1034,44 @@ body{
                         }
                     }
                     
+                }
+            }
+
+            .quality-training-container{
+        
+                .text-img-container{
+    
+                    .text{
+                     
+                        .btn-container{
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 2.5em 5em;
+    
+                            button{
+                                padding: .6em 1em;
+                                width: 80%;
+                                
+                                .btn-content{
+                                    
+                                    p{
+                                    font-size: 1.8rem;
+                                }
+                            }
+    
+                            }
+                        }
+                    }
+                    
+                }
+    
+                .dots{
+                    
+                    img{
+                        width: 19%;
+                        padding: 3.5em;
+                    }
                 }
             }
         }
@@ -1115,6 +1343,17 @@ body{
                     }
                 }
                 
+            }
+        }
+
+        .quality-training-container{
+
+            .dots{
+                
+                img{
+                    width: 23%;
+                    padding: 3.5em;
+                }
             }
         }
     }

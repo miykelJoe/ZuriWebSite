@@ -409,6 +409,119 @@ body main .card-container .cards .remote .bold-text {
 body main .card-container .cards .remote .small-text {
   color: #fff;
 }
+body main .quality-training-container {
+  background-color: var(--tag-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14em;
+}
+body main .quality-training-container .text-img-container {
+  max-width: 144em;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin-top: 5em;
+}
+body main .quality-training-container .text-img-container .text {
+  color: #fff;
+  margin-top: 2.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+body main .quality-training-container .text-img-container .text .arrow-container {
+  display: flex;
+  justify-content: right;
+  width: 85%;
+}
+body main .quality-training-container .text-img-container .text .arrow-container img {
+  width: 23%;
+}
+body main .quality-training-container .text-img-container .text .small-text,
+body main .quality-training-container .text-img-container .text .para {
+  font-size: 1.8rem;
+  line-height: 130%;
+  font-weight: 400;
+}
+body main .quality-training-container .text-img-container .text .bold-text {
+  font-size: 4rem;
+  line-height: 130%;
+  font-weight: 700;
+  margin-top: 0.25em;
+}
+body main .quality-training-container .text-img-container .text .para {
+  width: 75%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body main .quality-training-container .text-img-container .text .para button {
+  color: var(--tag-color);
+  margin: 2em 0;
+  font-size: 2rem;
+  padding: 0.8rem 2.8rem;
+  border-radius: 7em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+body main .quality-training-container .text-img-container .text .para button:hover {
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+body main .quality-training-container .text-img-container .text .btn-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5em 6em;
+}
+body main .quality-training-container .text-img-container .text .btn-container button {
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  border: 2px solid #fff;
+  outline: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.8em 1em;
+  border-radius: 8em;
+  cursor: no-drop;
+}
+body main .quality-training-container .text-img-container .text .btn-container button .btn-content {
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  display: flex;
+  align-items: center;
+}
+body main .quality-training-container .text-img-container .text .btn-container button .btn-content img {
+  width: 25%;
+}
+body main .quality-training-container .text-img-container .text .btn-container button .btn-content p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+body main .quality-training-container .text-img-container .img {
+  margin-top: 2.4em;
+}
+body main .quality-training-container .text-img-container .img img {
+  width: 100%;
+}
+body main .quality-training-container .dots {
+  width: inherit;
+}
+body main .quality-training-container .dots img {
+  width: 10%;
+  padding: 3.5em;
+}
 
 @media (max-width: 1200px) {
   body header {
@@ -585,6 +698,42 @@ body main .card-container .cards .remote .small-text {
   body main .card-container .cards .remote .small-text {
     color: #fff;
   }
+  body main .quality-training-container .text-img-container {
+    grid-template-columns: 1fr;
+    margin-top: 5em;
+  }
+  body main .quality-training-container .text-img-container .text .bold-text {
+    font-size: 3rem;
+  }
+  body main .quality-training-container .text-img-container .text .para {
+    width: 100%;
+  }
+  body main .quality-training-container .text-img-container .text .btn-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5em;
+  }
+  body main .quality-training-container .text-img-container .text .btn-container button {
+    padding: 0.6em 1em;
+  }
+  body main .quality-training-container .text-img-container .text .btn-container button .btn-content {
+    -moz-column-gap: 0.8em;
+         column-gap: 0.8em;
+  }
+  body main .quality-training-container .text-img-container .text .btn-container button .btn-content p {
+    font-size: 1.6rem;
+  }
+  body main .quality-training-container .text-img-container .img {
+    margin-top: 2.4em;
+  }
+  body main .quality-training-container .text-img-container .img img {
+    width: 100%;
+  }
+  body main .quality-training-container .dots img {
+    width: 17%;
+    padding: 3.5em;
+  }
 }
 @media (max-width: 900px) {
   body nav .nav-content .logo-container .logo img {
@@ -662,6 +811,23 @@ body main .card-container .cards .remote .small-text {
   }
   body main .card-container .cards .remote .small-text {
     color: #fff;
+  }
+  body main .quality-training-container .text-img-container .text .btn-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5em 5em;
+  }
+  body main .quality-training-container .text-img-container .text .btn-container button {
+    padding: 0.6em 1em;
+    width: 80%;
+  }
+  body main .quality-training-container .text-img-container .text .btn-container button .btn-content p {
+    font-size: 1.8rem;
+  }
+  body main .quality-training-container .dots img {
+    width: 19%;
+    padding: 3.5em;
   }
 }
 @media (max-width: 700px) {
@@ -866,5 +1032,9 @@ body main .card-container .cards .remote .small-text {
   }
   body main .card-container .cards .remote .small-text {
     color: #fff;
+  }
+  body main .quality-training-container .dots img {
+    width: 23%;
+    padding: 3.5em;
   }
 }/*# sourceMappingURL=industry.css.map */
