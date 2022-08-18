@@ -61,6 +61,11 @@ body{
         .btn-container{
     
          .btn{
+            background-image: url(../media/images/industry/dotsection5.svg);
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 82%;
             background-color: var(--background);
             padding: 2em;
             border-radius: 1.7em;
