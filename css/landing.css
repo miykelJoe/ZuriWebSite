@@ -1,0 +1,383 @@
+@import './general.css';
+body {
+  font-weight: 400;
+}
+body header .head__container {
+  background-image: url(../media/images/hero-bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header .head__container .zuri__logo {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6.9em 0;
+}
+body header .head__container .zuri {
+  max-width: 70em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body header .head__container .zuri h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 3.2em;
+  font-weight: 800;
+  margin: 0.5em 0 1.6em 0;
+}
+body header .head__container .zuri p {
+  color: var(--text-color);
+  font-size: 1.65rem;
+  opacity: 0.9;
+  line-height: 1.4em;
+  opacity: 0.9;
+  transform: scale(0.97);
+}
+body header .head__container .zuri p a {
+  text-decoration: none;
+  color: var(--tag-color);
+  background-color: transparent;
+}
+body header .head__container .zuri p a:hover {
+  text-decoration: none;
+  color: var(--tag-color-hover);
+}
+body header .head__container .btn__container {
+  margin: 9em 0 0 0;
+  display: grid;
+  grid-template-areas: "red-button white-button";
+  -moz-column-gap: 2.4em;
+       column-gap: 2.4em;
+}
+body header .head__container .btn__container a .header__btn {
+  border: 1px solid var(--tag-color);
+  padding: 0.8em 2em;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+body header .head__container .btn__container a .red__btn {
+  background-color: var(--tag-color);
+  color: var(--white);
+  grid-area: red-button;
+}
+body header .head__container .btn__container a .red__btn:hover {
+  background-color: var(--white);
+  color: var(--tag-color);
+}
+body header .head__container .btn__container a .white__btn {
+  background-color: var(--white);
+  color: var(--tag-color);
+  grid-area: white-button;
+}
+body header .head__container .btn__container a .white__btn:hover {
+  background-color: var(--tag-color);
+  color: var(--white);
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 22em;
+}
+body main .main__container {
+  max-width: 144em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body main .main__container .header {
+  color: var(--tag-color);
+  font-size: 1.4rem;
+  margin: 10em 0 0.5rem 0;
+  line-height: 2.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+body main .main__container .motto {
+  color: var(--text-color);
+  margin: 0.8rem 0 6rem 0;
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+body main .main__container .card__container {
+  width: inherit;
+  display: grid;
+  grid-template-areas: "training internship talent";
+  -moz-column-gap: 3em;
+       column-gap: 3em;
+}
+body main .main__container .card__container .card {
+  background-color: var(--card-bg-color);
+  max-width: 36em;
+  padding: 6em 3em;
+}
+body main .main__container .card__container .card .img {
+  margin: 0 0 4em 0;
+}
+body main .main__container .card__container .card p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--text-color);
+  opacity: 0.9;
+  margin: 0 0 1rem 0;
+}
+body main .main__container .card__container .card h3 {
+  opacity: 0.9;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  margin: 2em 0;
+  font-weight: 400;
+}
+body main .main__container .card__container .card h3 a {
+  color: var(--tag-color);
+  text-decoration: none;
+}
+body main .main__container .card__container .card h3 a:hover {
+  cursor: pointer;
+}
+body main .main__container .card__container .training-card-container {
+  grid-area: training;
+}
+body main .main__container .card__container .training-card-container .training-card .dots {
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  top: 25em;
+  left: -17em;
+}
+body main .main__container .card__container .internship-card-container {
+  grid-area: internship;
+}
+body main .main__container .card__container .talent-card-container {
+  grid-area: talent;
+}
+body main .main__container .card__container .talent-card-container .talent-card .dots {
+  width: 380px;
+  position: absolute;
+  z-index: -1;
+  top: 25em;
+  right: -20em;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+body footer .footer__container {
+  max-width: 114em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+body footer .footer__container .card__container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body footer .footer__container .card__container .card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  font-size: 1.6rem;
+}
+body footer .footer__container .card__container .card h3 {
+  color: var(--text-color);
+  font-weight: 600;
+}
+body footer .footer__container .card__container .card p {
+  color: var(--text-color);
+  opacity: 0.9;
+}
+body footer .footer__container .card__container .card a {
+  color: var(--tag-color);
+  text-decoration: none;
+}
+body footer .footer__container .card__container .card a:hover {
+  color: var(--tag-color-hover);
+}
+body footer .footer__container .card__container .contact p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  opacity: 0.9;
+}
+body footer .footer__container .card__container .social__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+body footer .footer__container .card__container .social__links .social__link--container img {
+  width: 1.2em;
+  margin: 0 0.2em;
+}
+body footer .footer__container .h__line--container {
+  width: 100%;
+  max-width: 114em;
+  margin: 10em 0 4em 0;
+}
+body footer .footer__container .h__line--container .horizontal__line {
+  width: 100%;
+  border: solid 1px rgba(0, 0, 0, 0.184);
+}
+body footer .footer__container .text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9em;
+  opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-weight: 400;
+    --side-padding: 3em;
+  }
+  body header .head__container .zuri__logo {
+    margin: 8em 0;
+  }
+  body main {
+    padding: 0 var(--side-padding);
+  }
+  body main .main__container {
+    max-width: 144em;
+  }
+  body main .main__container .card__container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "training" "internship" "talent";
+    row-gap: 3em;
+  }
+  body main .main__container .card__container .card {
+    background-color: var(--card-bg-color);
+    max-width: inherit;
+    padding: 6em 3em;
+  }
+  body main .main__container .card__container .training-card-container {
+    grid-area: training;
+  }
+  body main .main__container .card__container .training-card-container .training-card .dots {
+    display: none;
+  }
+  body main .main__container .card__container .internship-card-container {
+    grid-area: internship;
+  }
+  body main .main__container .card__container .talent-card-container {
+    grid-area: talent;
+  }
+  body main .main__container .card__container .talent-card-container .talent-card .dots {
+    display: none;
+  }
+  body footer {
+    padding: 0 var(--side-padding);
+  }
+  body footer .footer__container .text {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7em;
+  }
+}
+@media (max-width: 780px) {
+  body {
+    font-weight: 400;
+    --side-padding: 3em;
+  }
+  body header .head__container {
+    min-height: 61.5em;
+  }
+  body header .head__container .zuri__logo {
+    margin: 8em 0;
+  }
+  body header .head__container .zuri {
+    padding: 1em;
+  }
+  body header .head__container .btn__container {
+    margin: 9em 0 5em 0;
+    display: grid;
+    grid-template-areas: "red-button" "white-button";
+    row-gap: 2.4em;
+    place-items: center;
+  }
+  body main {
+    padding: 0 var(--side-padding);
+  }
+  body main .main__container {
+    max-width: 144em;
+  }
+  body main .main__container .header {
+    margin: 5em 0 0.5rem 0;
+  }
+  body main .main__container .card__container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "training" "internship" "talent";
+    row-gap: 3em;
+  }
+  body main .main__container .card__container .card {
+    background-color: var(--card-bg-color);
+    max-width: inherit;
+    padding: 6em 3em;
+  }
+  body main .main__container .card__container .training-card-container {
+    grid-area: training;
+  }
+  body main .main__container .card__container .training-card-container .training-card .dots {
+    display: none;
+  }
+  body main .main__container .card__container .internship-card-container {
+    grid-area: internship;
+  }
+  body main .main__container .card__container .talent-card-container {
+    grid-area: talent;
+  }
+  body main .main__container .card__container .talent-card-container .talent-card .dots {
+    display: none;
+  }
+  body footer {
+    padding: 0 var(--side-padding);
+  }
+  body footer .footer__container .card__container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3.5em;
+  }
+  body footer .footer__container .card__container .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  body footer .footer__container .card__container .card h3 {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+  body footer .footer__container .card__container .img {
+    width: 9.4em;
+  }
+}/*# sourceMappingURL=landing.css.map */
