@@ -558,7 +558,7 @@ body{
                         width: 100%;
                         display: grid;
                         grid-template-columns: 1fr 1fr;
-                        gap: 2.5em 6em;
+                        gap: 2.5em;
 
                         button{
                             background-color: transparent;
@@ -1348,10 +1348,38 @@ body{
 
         .quality-training-container{
 
+            .text-img-container{
+    
+                .text{
+                 
+                    .btn-container{
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2em;
+
+                        button{
+                            padding: .6em 1em;
+                            width: 100%;
+                            // width: fit-content;
+                            
+                            .btn-content{
+                                
+                                p{
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        }
+                    }
+                }
+                
+            }
+
             .dots{
                 
                 img{
-                    width: 23%;
+                    width: 35%;
                     padding: 3.5em;
                 }
             }
