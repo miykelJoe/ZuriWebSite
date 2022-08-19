@@ -529,6 +529,7 @@ body main .scope {
   align-items: center;
   width: 100%;
   margin-top: 6em;
+  margin-bottom: 100em;
 }
 body main .scope .scope-content {
   display: flex;
@@ -584,7 +585,7 @@ body main .scope .scope-content .card-scope-container .card {
   flex-direction: column;
   justify-content: center;
   border-radius: 4em;
-  padding: 4em 3em;
+  padding: 4em;
   background-color: #fff;
   box-shadow: 0 11px 22px rgba(231, 51, 43, 0.1);
 }
@@ -617,6 +618,28 @@ body main .scope .scope-content .card-scope-container .card .para p {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.01em;
+}
+body main .scope .scope-content .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7em 0 8em;
+}
+body main .scope .scope-content .btn-container button {
+  background-color: var(--tag-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 3em;
+  border: none;
+  outline: none;
+  border-radius: 7em;
+  cursor: pointer;
+}
+body main .scope .scope-content .btn-container button p {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

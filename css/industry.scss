@@ -618,6 +618,7 @@ body{
             align-items: center;
             width: 100%;
             margin-top: 6em;
+            margin-bottom: 100em;
 
             .scope-content{
                 display: flex;
@@ -681,12 +682,11 @@ body{
                         flex-direction: column;
                         justify-content: center;
                         border-radius: 4em;
-                        padding: 4em 3em;
+                        padding: 4em;
                         background-color: #fff;
                         box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
 
                         .head-text{
-                            // display: block;
                             width: 100%;
 
                             p{
@@ -722,6 +722,31 @@ body{
                                 line-height: 140%;
                                 letter-spacing: .01em;
                             }
+                        }
+                    }
+                }
+
+                .btn-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 7em 0 8em;
+
+                    button{
+                        background-color: var(--tag-color);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1em 3em;
+                        border: none;
+                        outline: none;
+                        border-radius: 7em;
+                        cursor: pointer;
+
+                        p{
+                            font-size: 1.8rem;
+                            color: #fff;
+                            text-align: center;
                         }
                     }
                 }
