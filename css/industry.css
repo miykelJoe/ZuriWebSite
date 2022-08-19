@@ -76,11 +76,13 @@ body nav .nav-content .nav-container .btn-container .circle img {
   background-color: var(--tag-color);
   width: 7em;
   border-radius: 50%;
+  cursor: pointer;
 }
 body nav .nav-content .nav-container .btn-container .rect {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 body nav .nav-content .nav-container .btn-container .rect p {
   border: solid 2px var(--tag-color);
@@ -283,6 +285,7 @@ body header .header-foot .head-foot-content .span p {
 body header .header-foot .head-foot-content .span p a {
   color: var(--green);
   text-decoration: underline;
+  cursor: pointer;
 }
 body main {
   display: flex;
@@ -675,6 +678,124 @@ body main .scope .scope-content .btn-container button p {
   font-size: 1.8rem;
   color: #fff;
   text-align: center;
+}
+body main .faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body main .faq .faq-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 144em;
+  width: 90%;
+  grid-auto-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: none;
+  border-right: none;
+  padding: 5em 0;
+}
+body main .faq .faq-content .arrow-text5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10em;
+  width: 100%;
+}
+body main .faq .faq-content .arrow-text5 .arrow {
+  width: 80%;
+  margin-left: auto;
+}
+body main .faq .faq-content .arrow-text5 .arrow img {
+  width: 13%;
+}
+body main .faq .faq-content .arrow-text5 .text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -4.5em;
+}
+body main .faq .faq-content .arrow-text5 .text .small-red-text {
+  color: var(--tag-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .faq .faq-content .arrow-text5 .text .small-red-text p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.00938em;
+}
+body main .faq .faq-content .arrow-text5 .text .bold-black-text {
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .faq .faq-content .arrow-text5 .text .bold-black-text p {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+}
+body main .faq .faq-content .table {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: auto;
+  width: 80%;
+}
+body main .faq .faq-content .table .tr {
+  border: 1px solid rgba(71, 44, 111, 0.43);
+  padding: 2em;
+}
+body main .faq .faq-content .table .tr h2 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 130%;
+  margin: 0.8em 0;
+}
+body main .faq .faq-content .table .tr p {
+  display: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 130%;
+}
+body main .faq .faq-content .question-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin: 7em 0 4em;
+}
+body main .faq .faq-content .question-btn p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 130%;
+  color: #333;
+}
+body main .faq .faq-content .question-btn button {
+  background-color: var(--tag-color);
+  padding: 1em 3.2em;
+  outline: none;
+  border: none;
+  border-radius: 7em;
+}
+body main .faq .faq-content .question-btn button p {
+  color: #fff;
+  font-size: 1.8rem;
+}
+body main .faq .faq-content .question-btn button:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -1365,7 +1486,7 @@ body main .scope .scope-content .card-scope-container .framework .imgs img:nth-c
     font-size: 1.8rem;
   }
   body main .scope .scope-content .text-arrow .text .bold-text {
-    width: 70%;
+    width: 100%;
   }
   body main .scope .scope-content .text-arrow .text .bold-text p {
     font-size: 2.4rem;
