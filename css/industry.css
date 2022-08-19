@@ -529,7 +529,6 @@ body main .scope {
   align-items: center;
   width: 100%;
   margin-top: 6em;
-  margin-bottom: 100em;
 }
 body main .scope .scope-content {
   display: flex;
@@ -622,6 +621,38 @@ body main .scope .scope-content .card-scope-container .card .para p {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.01em;
+}
+body main .scope .scope-content .card-scope-container .front-end .imgs img:nth-child(3) {
+  width: 13%;
+}
+body main .scope .scope-content .card-scope-container .back-end .imgs img {
+  width: 13%;
+}
+body main .scope .scope-content .card-scope-container .product-design .imgs img {
+  width: 13%;
+}
+body main .scope .scope-content .card-scope-container .product-design .imgs img:nth-child(2) {
+  width: 27%;
+}
+body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(1) {
+  width: 30%;
+}
+body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(2) {
+  width: 23%;
+}
+body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(3) {
+  width: 19%;
+}
+body main .scope .scope-content .card-scope-container .fullstack .imgs img:nth-child(3),
+body main .scope .scope-content .card-scope-container .fullstack .imgs img:nth-child(4) {
+  width: 13%;
+}
+body main .scope .scope-content .card-scope-container .framework .imgs img {
+  width: 19.305%;
+}
+body main .scope .scope-content .card-scope-container .framework .imgs img:nth-child(2),
+body main .scope .scope-content .card-scope-container .framework .imgs img:nth-child(3) {
+  width: 23.3%;
 }
 body main .scope .scope-content .btn-container {
   display: flex;
@@ -893,6 +924,41 @@ body main .scope .scope-content .btn-container button p {
   body main .scope .scope-content .card-scope-container .card .para p {
     font-size: 1.75rem;
   }
+  body main .scope .scope-content .card-scope-container .front-end .imgs img:nth-child(3) {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .back-end .imgs img {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .back-end .imgs img:nth-child(1) {
+    width: 17%;
+  }
+  body main .scope .scope-content .card-scope-container .product-design .imgs img {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .product-design .imgs img:nth-child(2) {
+    width: 27%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(1) {
+    width: 30%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(2) {
+    width: 23%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(3) {
+    width: 16%;
+  }
+  body main .scope .scope-content .card-scope-container .fullstack .imgs img:nth-child(3),
+body main .scope .scope-content .card-scope-container .fullstack .imgs img:nth-child(4) {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .framework .imgs img {
+    width: 19.305%;
+  }
+  body main .scope .scope-content .card-scope-container .framework .imgs img:nth-child(2),
+body main .scope .scope-content .card-scope-container .framework .imgs img:nth-child(3) {
+    width: 21%;
+  }
   body main .scope .scope-content .btn-container button {
     padding: 1em 2em;
   }
@@ -1023,6 +1089,47 @@ body main .scope .scope-content .btn-container button p {
   }
   body main .scope .scope-content .card-scope-container .card .para p {
     font-size: 1.7rem;
+  }
+  body main .scope .scope-content .card-scope-container .front-end .imgs img {
+    width: 8%;
+  }
+  body main .scope .scope-content .card-scope-container .front-end .imgs img:nth-child(3) {
+    width: 9%;
+  }
+  body main .scope .scope-content .card-scope-container .back-end .imgs img {
+    width: 10%;
+  }
+  body main .scope .scope-content .card-scope-container .back-end .imgs img:nth-child(1) {
+    width: 10%;
+  }
+  body main .scope .scope-content .card-scope-container .back-end .imgs img:nth-child(3) {
+    width: 8%;
+  }
+  body main .scope .scope-content .card-scope-container .product-design .imgs img {
+    width: 8%;
+  }
+  body main .scope .scope-content .card-scope-container .product-design .imgs img:nth-child(2) {
+    width: 17%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(1) {
+    width: 15%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(2) {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(3) {
+    width: 8%;
+  }
+  body main .scope .scope-content .card-scope-container .fullstack .imgs img:nth-child(3),
+body main .scope .scope-content .card-scope-container .fullstack .imgs img:nth-child(4) {
+    width: 10%;
+  }
+  body main .scope .scope-content .card-scope-container .framework .imgs img {
+    width: 13.305%;
+  }
+  body main .scope .scope-content .card-scope-container .framework .imgs img:nth-child(2),
+body main .scope .scope-content .card-scope-container .framework .imgs img:nth-child(3) {
+    width: 13.3%;
   }
   body main .scope .scope-content .btn-container button {
     padding: 1em 3.2em;
@@ -1277,6 +1384,41 @@ body main .scope .scope-content .btn-container button p {
   }
   body main .scope .scope-content .card-scope-container .card .para p {
     font-size: 1.6rem;
+  }
+  body main .scope .scope-content .card-scope-container .front-end .imgs img:nth-child(3) {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .back-end .imgs img {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .back-end .imgs img:nth-child(1) {
+    width: 17%;
+  }
+  body main .scope .scope-content .card-scope-container .product-design .imgs img {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .product-design .imgs img:nth-child(2) {
+    width: 27%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(1) {
+    width: 30%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(2) {
+    width: 23%;
+  }
+  body main .scope .scope-content .card-scope-container .devops .imgs img:nth-child(3) {
+    width: 16%;
+  }
+  body main .scope .scope-content .card-scope-container .fullstack .imgs img:nth-child(3),
+body main .scope .scope-content .card-scope-container .fullstack .imgs img:nth-child(4) {
+    width: 13%;
+  }
+  body main .scope .scope-content .card-scope-container .framework .imgs img {
+    width: 19.305%;
+  }
+  body main .scope .scope-content .card-scope-container .framework .imgs img:nth-child(2),
+body main .scope .scope-content .card-scope-container .framework .imgs img:nth-child(3) {
+    width: 21%;
   }
   body main .scope .scope-content .btn-container button {
     padding: 1em 3.2em;
