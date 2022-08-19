@@ -522,6 +522,102 @@ body main .quality-training-container .dots img {
   width: 10%;
   padding: 3.5em;
 }
+body main .scope {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 6em;
+}
+body main .scope .scope-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 144em;
+  width: 90%;
+}
+body main .scope .scope-content .text-arrow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main .scope .scope-content .text-arrow .text {
+  display: block;
+  width: 50%;
+}
+body main .scope .scope-content .text-arrow .text .small-text {
+  width: 100%;
+  color: var(--tag-color);
+}
+body main .scope .scope-content .text-arrow .text .small-text p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 130%;
+}
+body main .scope .scope-content .text-arrow .text .bold-text {
+  width: 100%;
+}
+body main .scope .scope-content .text-arrow .text .bold-text p {
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 4rem;
+}
+body main .scope .scope-content .text-arrow .arrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .scope .scope-content .text-arrow .arrow img {
+  width: 18%;
+}
+body main .scope .scope-content .card-scope-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: auto;
+  gap: 2em;
+}
+body main .scope .scope-content .card-scope-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4em;
+  padding: 4em 3em;
+  background-color: #fff;
+  box-shadow: 0 11px 22px rgba(231, 51, 43, 0.1);
+}
+body main .scope .scope-content .card-scope-container .card .head-text {
+  width: 100%;
+}
+body main .scope .scope-content .card-scope-container .card .head-text p {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 1.2em;
+  letter-spacing: 0.00938em;
+}
+body main .scope .scope-content .card-scope-container .card .imgs {
+  display: flex;
+  -moz-column-gap: 1.6em;
+       column-gap: 1.6em;
+  width: 100%;
+}
+body main .scope .scope-content .card-scope-container .card .para {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 4em 0 3em;
+}
+body main .scope .scope-content .card-scope-container .card .para p {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+}
 
 @media (max-width: 1200px) {
   body header {
