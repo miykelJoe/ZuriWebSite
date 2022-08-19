@@ -1579,4 +1579,7 @@ body main .scope .scope-content .card-scope-container .framework .imgs img:nth-c
   body main .faq .faq-content .arrow-text5 .text .bold-black-text p {
     font-size: 2.4rem;
   }
+  body main .faq .faq-content .question-btn {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=industry.css.map */
