@@ -697,18 +697,17 @@ body main .faq .faq-content {
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-left: none;
   border-right: none;
-  padding: 5em 0;
 }
 body main .faq .faq-content .arrow-text5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10em;
+  margin: 5em 0 10em;
   width: 100%;
 }
 body main .faq .faq-content .arrow-text5 .arrow {
-  width: 80%;
+  width: 90%;
   margin-left: auto;
 }
 body main .faq .faq-content .arrow-text5 .arrow img {
@@ -750,7 +749,7 @@ body main .faq .faq-content .table {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-columns: auto;
-  width: 80%;
+  width: 85%;
 }
 body main .faq .faq-content .table .tr {
   border: 1px solid rgba(71, 44, 111, 0.43);
@@ -1083,6 +1082,18 @@ body main .scope .scope-content .card-scope-container .framework .imgs img:nth-c
   body main .scope .scope-content .btn-container button {
     padding: 1em 2em;
   }
+  body main .faq .faq-content .arrow-text5 .arrow img {
+    width: 13%;
+  }
+  body main .faq .faq-content .arrow-text5 .text {
+    margin-top: -5em;
+  }
+  body main .faq .faq-content .arrow-text5 .text .small-red-text p {
+    font-size: 2rem;
+  }
+  body main .faq .faq-content .arrow-text5 .text .bold-black-text p {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 900px) {
   body nav .nav-content .logo-container .logo img {
@@ -1254,6 +1265,18 @@ body main .scope .scope-content .card-scope-container .framework .imgs img:nth-c
   }
   body main .scope .scope-content .btn-container button {
     padding: 1em 3.2em;
+  }
+  body main .faq .faq-content .arrow-text5 .arrow img {
+    width: 23%;
+  }
+  body main .faq .faq-content .arrow-text5 .text {
+    margin-top: -2em;
+  }
+  body main .faq .faq-content .arrow-text5 .text .small-red-text p {
+    font-size: 2rem;
+  }
+  body main .faq .faq-content .arrow-text5 .text .bold-black-text p {
+    font-size: 3rem;
   }
 }
 @media (max-width: 700px) {
@@ -1543,5 +1566,17 @@ body main .scope .scope-content .card-scope-container .framework .imgs img:nth-c
   }
   body main .scope .scope-content .btn-container button {
     padding: 1em 3.2em;
+  }
+  body main .faq .faq-content .arrow-text5 .arrow img {
+    width: 23%;
+  }
+  body main .faq .faq-content .arrow-text5 .text {
+    margin-top: -1.3em;
+  }
+  body main .faq .faq-content .arrow-text5 .text .small-red-text p {
+    font-size: 1.8rem;
+  }
+  body main .faq .faq-content .arrow-text5 .text .bold-black-text p {
+    font-size: 2.4rem;
   }
 }/*# sourceMappingURL=industry.css.map */
