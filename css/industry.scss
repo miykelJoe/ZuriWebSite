@@ -1236,8 +1236,8 @@ body {
                         color: var(--tag-color);
                         cursor: pointer;
                         box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
-                            rgb(0 0 0 / 14%) 0px 2px 2px 0px,
-                            rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+                                    rgb(0 0 0 / 14%) 0px 2px 2px 0px,
+                                    rgb(0 0 0 / 12%) 0px 1px 5px 0px;
 
                         p {
                             font-size: 1.8rem;
@@ -1301,7 +1301,16 @@ body {
                 }
 
                 .zuri-social-links{
-                    gap: 2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 1em;
+
+                    a{
+                        img{
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
             .lower-part{
@@ -3065,6 +3074,64 @@ body {
                             width: 16.6%;
                             height: 10vh;
                         }
+                    }
+                }
+            }
+        }
+
+        footer {
+    
+            .footer-content {
+    
+                .upper-part {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    place-items: center;
+                    row-gap: 2em;
+    
+                    .zuri-foot-logo {
+                        img {
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .zuri-social-links{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 1em;
+    
+                        a{
+                            img{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .lower-part{
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    .h-line{
+                        width: 100%;
+                        height: .2em;
+                        background-color: rgba(0, 0, 0, 0.12);
+                    }
+    
+                    p{
+                        margin: 1.6em 0;
+                    }
+                    p.zuri-training{
+                        font-size: 1.6rem;
+                        margin: 1em 0;
+                    }
+                    p.policy{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: center;
+                        align-items: center;
+                        row-gap: 3em;
+                        margin-bottom: 4.5em;
                     }
                 }
             }
