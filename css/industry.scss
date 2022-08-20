@@ -1235,19 +1235,19 @@ body {
                         background-color: #fff;
                         color: var(--tag-color);
                         cursor: pointer;
-                        box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, 
-                                    rgb(0 0 0 / 14%) 0px 2px 2px 0px, 
-                                    rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+                        box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+                            rgb(0 0 0 / 14%) 0px 2px 2px 0px,
+                            rgb(0 0 0 / 12%) 0px 1px 5px 0px;
 
                         p {
                             font-size: 1.8rem;
                         }
                     }
 
-                    button:hover{
-                        box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, 
-                                    rgb(0 0 0 / 14%) 0px 4px 5px 0px, 
-                                    rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+                    button:hover {
+                        box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px,
+                            rgb(0 0 0 / 14%) 0px 4px 5px 0px,
+                            rgb(0 0 0 / 12%) 0px 1px 10px 0px;
                     }
                 }
 
@@ -1263,6 +1263,66 @@ body {
 
                     .group-circles {
                         width: 13%;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 9em 0 2em;
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 144em;
+            width: 90%;
+
+            .foot {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .upper-part {
+                align-items: center;
+
+                .zuri-foot-logo {
+                    img {
+                        cursor: pointer;
+                    }
+                }
+
+                .zuri-social-links{
+                    gap: 2em;
+                }
+            }
+            .lower-part{
+                align-items: center;
+                margin-top: 2em;
+
+                p{
+                    margin: 1.6em 0;
+                }
+                p.zuri-training{
+                    font-size: 1.6rem;
+                }
+                p.policy{
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 3em;
+
+                    a{
+                        text-decoration: none;
+                        color: var(--black);
+                        font-size: 1.6rem;
                     }
                 }
             }
@@ -1825,31 +1885,31 @@ body {
             }
 
             .get-started {
-    
+
                 .get-started-content {
-    
+
                     .round-img {
                         left: min(10%);
                         width: 15%;
-    
+
                     }
-    
+
                     .bend-img {
                         right: min(0);
                         width: 14%;
                     }
-    
+
                     .text-container {
-    
+
                         p.small-text {
                             width: 60%;
                         }
-    
+
                         p.bold-text {
                             width: 50%;
                             font-size: 4.6rem;
                         }
-    
+
                         button {
                             padding: .8em 2.5em;
                             border: none;
@@ -1857,7 +1917,7 @@ body {
                             border-radius: 7em;
                             background-color: #fff;
                             color: var(--tag-color);
-    
+
                             p {
                                 font-size: 1.8rem;
                             }
@@ -2327,35 +2387,35 @@ body {
             }
 
             .get-started {
-    
+
                 .group-slant-circle {
-    
+
                     img {
                         display: none;
                     }
                 }
-    
+
                 .get-started-content {
-    
+
                     .round-img {
                         position: absolute;
                         left: min(10%);
                         top: 8em;
                         width: 13.4%;
-    
+
                     }
-    
+
                     .bend-img {
                         width: 22%;
                     }
-    
+
                     .text-container {
 
                         p.bold-text {
                             width: 50%;
                             font-size: 4.6rem;
                         }
-    
+
                         button {
                             padding: .8em 2.4em;
                             border: none;
@@ -2363,19 +2423,19 @@ body {
                             border-radius: 7em;
                             background-color: #fff;
                             color: var(--tag-color);
-    
+
                             p {
                                 font-size: 1.8rem;
                             }
                         }
                     }
-    
+
                     .bg-image-foot {
-    
+
                         .blur-curve {
                             width: 15.1%;
                         }
-    
+
                         .group-circles {
                             width: 17.5%;
                         }
@@ -2970,22 +3030,22 @@ body {
             }
 
             .get-started {
-    
-    
+
+
                 .get-started-content {
-    
+
                     .round-img {
                         position: absolute;
                         left: min(10%);
                         top: 4em;
                         width: 21%;
-    
+
                     }
-    
+
                     .bend-img {
                         width: 24.6%;
                     }
-    
+
                     .text-container {
 
                         p.bold-text {
@@ -2993,14 +3053,14 @@ body {
                             font-size: 2.6rem;
                         }
                     }
-    
+
                     .bg-image-foot {
                         align-items: center;
-    
+
                         .blur-curve {
                             width: 20.2%;
                         }
-    
+
                         .group-circles {
                             width: 16.6%;
                             height: 10vh;

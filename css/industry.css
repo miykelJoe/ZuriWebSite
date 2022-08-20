@@ -1039,6 +1039,57 @@ body main .get-started .get-started-content .bg-image-foot .blur-curve {
 body main .get-started .get-started-content .bg-image-foot .group-circles {
   width: 13%;
 }
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 9em 0 2em;
+}
+body footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 144em;
+  width: 90%;
+}
+body footer .footer-content .foot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body footer .footer-content .upper-part {
+  align-items: center;
+}
+body footer .footer-content .upper-part .zuri-foot-logo img {
+  cursor: pointer;
+}
+body footer .footer-content .upper-part .zuri-social-links {
+  gap: 2em;
+}
+body footer .footer-content .lower-part {
+  align-items: center;
+  margin-top: 2em;
+}
+body footer .footer-content .lower-part p {
+  margin: 1.6em 0;
+}
+body footer .footer-content .lower-part p.zuri-training {
+  font-size: 1.6rem;
+}
+body footer .footer-content .lower-part p.policy {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 3em;
+       column-gap: 3em;
+}
+body footer .footer-content .lower-part p.policy a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.6rem;
+}
 
 @media (max-width: 1200px) {
   body header {
