@@ -936,9 +936,103 @@ body main .structure .structure-content .track-card-container .length .paragraph
 }
 body main .structure .structure-content .track-card-container .length .paragraph ul li img {
   width: 1em;
+  cursor: pointer;
 }
 body main .structure .structure-content .track-card-container .length .paragraph ul .talent-pool {
   text-decoration: underline;
+}
+body main .get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body main .get-started .group-slant-circle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 144em;
+  width: 90%;
+  margin: 8em 0 2em;
+}
+body main .get-started .group-slant-circle img {
+  width: 10%;
+}
+body main .get-started .get-started-content {
+  background-color: var(--tag-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 144em;
+  width: 90%;
+  border-radius: 2.4em;
+  position: relative;
+}
+body main .get-started .get-started-content .round-img {
+  position: absolute;
+  left: 14%;
+  top: 10em;
+  width: 17%;
+}
+body main .get-started .get-started-content .bend-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 11%;
+}
+body main .get-started .get-started-content .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+body main .get-started .get-started-content .text-container p.small-text {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 4em;
+  line-height: 130%;
+}
+body main .get-started .get-started-content .text-container p.bold-text {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin: 0.5em 0 0.8em;
+}
+body main .get-started .get-started-content .text-container button {
+  padding: 1em 3.2em;
+  border: none;
+  outline: none;
+  border-radius: 7em;
+  background-color: #fff;
+  color: var(--tag-color);
+}
+body main .get-started .get-started-content .text-container button p {
+  font-size: 1.8rem;
+}
+body main .get-started .get-started-content .bg-image-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+body main .get-started .get-started-content .bg-image-foot .blur-curve {
+  width: 11%;
+}
+body main .get-started .get-started-content .bg-image-foot .group-circles {
+  width: 13%;
 }
 
 @media (max-width: 1200px) {
@@ -1284,6 +1378,32 @@ body main .scope .scope-content .card-scope-container .framework .imgs img:nth-c
     right: 4em;
     bottom: 14em;
   }
+  body main .get-started .get-started-content .round-img {
+    left: 10%;
+    width: 15%;
+  }
+  body main .get-started .get-started-content .bend-img {
+    right: 0;
+    width: 14%;
+  }
+  body main .get-started .get-started-content .text-container p.small-text {
+    width: 60%;
+  }
+  body main .get-started .get-started-content .text-container p.bold-text {
+    width: 50%;
+    font-size: 4.6rem;
+  }
+  body main .get-started .get-started-content .text-container button {
+    padding: 0.8em 2.5em;
+    border: none;
+    outline: none;
+    border-radius: 7em;
+    background-color: #fff;
+    color: var(--tag-color);
+  }
+  body main .get-started .get-started-content .text-container button p {
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 900px) {
   body nav .nav-content .logo-container .logo img {
@@ -1535,6 +1655,39 @@ body main .scope .scope-content .card-scope-container .framework .imgs img:nth-c
   body main .structure .structure-content .track-card-container .length .paragraph p {
     font-size: 1.6rem;
     line-height: 140%;
+  }
+  body main .get-started .group-slant-circle img {
+    display: none;
+  }
+  body main .get-started .get-started-content .round-img {
+    position: absolute;
+    left: 10%;
+    top: 8em;
+    width: 13.4%;
+  }
+  body main .get-started .get-started-content .bend-img {
+    width: 22%;
+  }
+  body main .get-started .get-started-content .text-container p.bold-text {
+    width: 50%;
+    font-size: 4.6rem;
+  }
+  body main .get-started .get-started-content .text-container button {
+    padding: 0.8em 2.4em;
+    border: none;
+    outline: none;
+    border-radius: 7em;
+    background-color: #fff;
+    color: var(--tag-color);
+  }
+  body main .get-started .get-started-content .text-container button p {
+    font-size: 1.8rem;
+  }
+  body main .get-started .get-started-content .bg-image-foot .blur-curve {
+    width: 15.1%;
+  }
+  body main .get-started .get-started-content .bg-image-foot .group-circles {
+    width: 17.5%;
   }
 }
 @media (max-width: 700px) {
@@ -1898,5 +2051,28 @@ body main .scope .scope-content .card-scope-container .framework .imgs img:nth-c
   body main .structure .structure-content .track-card-container .length .paragraph p {
     font-size: 1.6rem;
     line-height: 140%;
+  }
+  body main .get-started .get-started-content .round-img {
+    position: absolute;
+    left: 10%;
+    top: 4em;
+    width: 21%;
+  }
+  body main .get-started .get-started-content .bend-img {
+    width: 24.6%;
+  }
+  body main .get-started .get-started-content .text-container p.bold-text {
+    width: 60%;
+    font-size: 2.6rem;
+  }
+  body main .get-started .get-started-content .bg-image-foot {
+    align-items: center;
+  }
+  body main .get-started .get-started-content .bg-image-foot .blur-curve {
+    width: 20.2%;
+  }
+  body main .get-started .get-started-content .bg-image-foot .group-circles {
+    width: 16.6%;
+    height: 6vh;
   }
 }/*# sourceMappingURL=industry.css.map */
