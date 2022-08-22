@@ -68,8 +68,9 @@ body{
          h1{
             color: #333;
             width: 80%;
-             font-size: clamp(1.4rem, 1vw, 2rem);
+            font-size: clamp(1.4rem, 1vw, 2rem);
             text-align: center;
+            text-transform: uppercase;
         }
      }
     }

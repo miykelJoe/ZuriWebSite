@@ -63,6 +63,7 @@ body .btn-container .text h1 {
   width: 80%;
   font-size: clamp(1.4rem, 1vw, 2rem);
   text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: 600px) {
