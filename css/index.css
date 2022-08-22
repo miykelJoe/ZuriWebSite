@@ -59,6 +59,7 @@ body .btn-container .text {
   align-items: center;
 }
 body .btn-container .text h1 {
+  color: #333;
   width: 80%;
   font-size: clamp(1.4rem, 1vw, 2rem);
   text-align: center;
