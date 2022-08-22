@@ -17,8 +17,10 @@ body{
      background: var(--background);   
      height: inherit;
      display: flex;
+     flex-direction: column;
      justify-content: center;
      align-items: center;
+     row-gap: 10em;
 
      .btn{
         display: flex;
@@ -28,7 +30,7 @@ body{
         gap: 2em;
 
         a{
-            width: 100%;;
+            width: 100%;
 
             button{
                 background-color: #fff;
@@ -39,6 +41,7 @@ body{
                 border: none;
                 outline: none;
                 transition: .3s;
+                cursor: pointer;
 
                 p{
                     font-size: clamp(1.2rem, 1.1vw, 2rem);
@@ -52,6 +55,20 @@ body{
                 transform: scale(1.05);
                 transition: .3s;
             }
+        }
+     }
+
+     .text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+         
+         h1{
+            width: 80%;
+             font-size: clamp(1.4rem, 1vw, 2rem);
+            text-align: center;
         }
      }
     }

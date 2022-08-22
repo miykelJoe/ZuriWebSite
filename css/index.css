@@ -15,8 +15,10 @@ body .btn-container {
   background: var(--background);
   height: inherit;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 10em;
 }
 body .btn-container .btn {
   display: flex;
@@ -37,6 +39,7 @@ body .btn-container .btn a button {
   border: none;
   outline: none;
   transition: 0.3s;
+  cursor: pointer;
 }
 body .btn-container .btn a button p {
   font-size: clamp(1.2rem, 1.1vw, 2rem);
@@ -48,6 +51,17 @@ body .btn-container .btn a button:hover {
   box-shadow: inset 0px 0px 1.5em 1em rgba(208, 20, 20, 0.607);
   transform: scale(1.05);
   transition: 0.3s;
+}
+body .btn-container .text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .btn-container .text h1 {
+  width: 80%;
+  font-size: clamp(1.4rem, 1vw, 2rem);
+  text-align: center;
 }
 
 @media (min-width: 600px) {
